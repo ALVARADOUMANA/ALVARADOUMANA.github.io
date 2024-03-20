@@ -1,0 +1,289 @@
+/*
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;height: 20vh;
+} */
+
+
+/* estilo de index.html ----------------------------------------------------*/
+
+.main {
+	box-sizing: border-box;
+	background-image: url("../imgs/fondo5.png");
+	background-size: 100%;
+	text-align: center;
+	margin-bottom: 0%;
+	padding-top: 20%;
+}
+.main img {
+	height: 18vh;
+	display: block;
+	margin: 0 auto 10%;
+	padding: 10% 0 0;
+}
+.main h2 {
+	display: block;
+	width: 45%;
+	margin: 0 auto;
+	background-color: white;
+	padding: 0% 10% 2%;
+	font-size: 20px;
+	font-family: "Lobster", georgia;
+	border-radius: 15px 15px 0px 0px;
+	
+
+}
+.summary {
+	margin: 10px auto;
+}
+
+
+.summary p{
+	font-family: "Ojuju", georgia;
+	font-size: 15px;
+	margin-top: 20px;
+	width: 80%;
+}
+.summaryFuture {
+	position: relative;
+	background-color: ghostwhite;
+	margin: 20% auto;
+	padding: 5% 0;
+	position: static;
+	
+}
+.summaryFuture h2 {
+	font-size: 3vh;
+	font-family: "Lobsterr", georgia;
+}
+.summaryFutureLeft {
+	display: block;
+	text-align: center;
+	margin: auto;
+	width: 80%;
+}
+.summaryFutureLeft h3 {
+	margin-top: 6vh;
+	font-size: 4vh;
+	padding: 1vh;
+	font-family: "Lobsterr", georgia;
+}
+.summaryFutureLeft p {
+	margin: 4% auto 0;
+	font-size: 3vh;
+	font-family: "Ojuju", georgia;
+}
+.summaryFutureRight {
+	margin: auto;
+	padding: 10% 5%;
+	width: 80%;
+}
+#finca:hover {
+	height: 40vh;
+	top: -10%;
+	left: auto;
+}
+#bueyes:hover {
+	height: 35vh;
+	top: 10%;
+	left: auto;
+}
+#finca {
+	height: 30vh;
+	position: relative;
+	transition: all 1.2s;
+	left: 40%;
+	top: -20%;
+}
+#bueyes {
+	height: 25vh;
+	position: relative;
+	left: -5%;
+	transition: all 1.2s;
+}
+#whatsapp{
+	position: fixed;
+	border: none;
+	background: none;
+	cursor: pointer;
+	bottom: 4vh;
+	right: 4vh;
+}
+#whatsapp img{
+	height: 40px;
+	transition: all 1s;
+}
+#whatsapp img:hover{
+	height: 60px;
+}
+@media (max-width: 799px) {
+    body {
+        margin: 10px; /* Ajusta el margen para anchos menores a 800px */
+    }
+
+}
+/* estilo de indexMenu.html ---------------------------------------------------*/
+.boxMenu {
+	height: 400px;
+	width: 300px;
+	display: inline-table;
+	position: relative;
+	margin: 2vh 2vh;
+	background-image: url("../imgs/CREACIONES.png" );
+	background-repeat: no-repeat;
+	background-size: 70%;
+	text-align: center;
+	background-position: center;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px solid gray;
+	transition: all 1s;
+	cursor: pointer;
+}
+.boxMenu:hover {
+	
+	height: 500px;
+	width: 400px;
+	margin: 0 2vh;
+}
+.boxMenu:hover > h2 {
+	margin: 40px;
+	font-size: 40px;
+}
+.boxMenu:hover > li {
+	margin: 40px;
+	font-size: 40px;
+}
+
+.boxMenu h2 {
+	margin: 30px;
+	font-size: 30px;
+	transition: all 1s;
+}
+.boxMenu li{
+	margin: 20px;
+	font-size: 20px;
+	font-family: "Lobster", georgia;
+	transition: all 1s;
+}
+#titleMenu {
+	font-size: 50px;
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+	font-family: "Lobsterr", georgia;
+}
+
+.mainMenu{
+	background-color: ghostwhite;
+	padding: 40px;
+	box-sizing: border-box;
+	position: static;
+	height: auto;
+	width: auto;
+}
+/* estilo de indexSugerencias.html --------------------------------------------*/
+.form h2{
+	margin: 70px;
+	font-size: 50px;
+	font-family: "Lobster", georgia;
+}
+.form p{
+	margin: 50px;
+	font-size: 30px;
+}
+.form input{
+	margin: 10px;
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 17px;
+	background-color: ghostwhite;
+	transition: all 1s;
+}
+.form button{
+	border-radius: 10px;
+	background-color: ghostwhite;
+	font-size: 20px;
+	padding: 5px 20px;
+}
+.form button:hover{
+	background-color: darkslategray;
+}
+#inputemail:focus {
+	width: 400px;
+}
+#inputtexto:focus {
+	width: 500px;
+}
+
+/* Estilo de encabezado y pie de pagina ---------------------------------------*/
+
+.navbar {
+    background-color: ghostwhite;
+    padding: 10px 10px; 
+    display: flex;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+.navbar img{
+	height: 4vh;
+}
+/*
+	float: right;
+}
+.right #lockup {
+	float: left;
+	width: 20%;
+}*/
+.navbar ul {
+	position: fixed;
+    list-style-type: none;
+    padding: 10px;
+	margin: auto;
+    display: flex; 
+	right: 2vh;
+}
+li {
+	margin-left: 1.5vh;
+	font-size: 1.8vh;
+	font-family: georgia;
+}
+li a{
+	text-decoration: none;
+}
+.left, .right {
+	display: inline-block;
+}
+.left button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	
+}
+.navbar a {
+    color: black;
+}
+.navbar a:hover {
+    color: lightseagreen;
+}
+
+footer {
+    background-color: darkslategray;
+    text-align: center;
+    padding-top: 10px; 
+    padding-bottom: 20px;
+    margin-top: 100px;
+}
+footer a{
+    color: black;
+}
+#instagram {
+	margin: 2vh;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+#instagram img{
+	height: 4vh;
+}
