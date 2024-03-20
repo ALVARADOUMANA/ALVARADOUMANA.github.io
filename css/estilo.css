@@ -12,56 +12,56 @@
 	box-sizing: border-box;
 	background-image: url("../imgs/fondo5.png");
 	background-size: 100%;
-	text-align: center;
-	margin-bottom: 0%;
-	padding-top: 20%;
-}
-.main img {
-	height: 18vh;
-	display: block;
-	margin: 0 auto 10%;
-	padding: 10% 0 0;
+	background-attachment: fixed;
+	background-position: center;
+	padding-top: 200px;
+	position: center;
+	
 }
 .main h2 {
-	display: block;
-	width: 45%;
-	margin: 0 auto;
+	display: inline-block;
 	background-color: white;
-	padding: 0% 10% 2%;
-	font-size: 20px;
+	padding: 50px 270px 30px;
+	position: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 40px;
 	font-family: "Lobster", georgia;
 	border-radius: 15px 15px 0px 0px;
-	
 
 }
 .summary {
-	margin: 10px auto;
+	margin: 10px 10px 10px 10px;
+	height: 300px;
+	position: center;
 }
 
 
 .summary p{
 	font-family: "Ojuju", georgia;
-	font-size: 15px;
-	margin-top: 20px;
-	width: 80%;
+	font-size: 25px;
+	margin-top: 40px;
+	width: 900px;
 }
 .summaryFuture {
 	position: relative;
 	background-color: ghostwhite;
-	margin: 20% auto;
-	padding: 5% 0;
+	margin: 20vh auto;
+	padding: 10vh 0;
 	position: static;
 	
 }
 .summaryFuture h2 {
-	font-size: 3vh;
+	font-size: 6vh;
 	font-family: "Lobsterr", georgia;
 }
 .summaryFutureLeft {
-	display: block;
-	text-align: center;
-	margin: auto;
-	width: 80%;
+	display: inline-block;
+	position: relative;
+	height: 50vh;
+	width: 50vh;
+	top: -5vh;
+	left: 30vh;
 }
 .summaryFutureLeft h3 {
 	margin-top: 6vh;
@@ -70,36 +70,44 @@
 	font-family: "Lobsterr", georgia;
 }
 .summaryFutureLeft p {
-	margin: 4% auto 0;
-	font-size: 3vh;
+	margin-top: 4vh;
+	font-size: 3.5vh;
+	padding: 0vh;
 	font-family: "Ojuju", georgia;
 }
 .summaryFutureRight {
-	margin: auto;
-	padding: 10% 5%;
-	width: 80%;
+	display: inline-block;
+	position: relative;
+	height: 50vh;
+	width: 50vh;
+	top: -16vh;
+	left: 60vh;
+	cursor: pointer;
 }
-#finca:hover {
-	height: 40vh;
-	top: -10%;
-	left: auto;
+.summaryFutureRight:hover > #bueyes {
+	height: 400px;
+	position: absolute;
+	margin-top: 20vh;
+	margin-left: 32vh;
 }
-#bueyes:hover {
-	height: 35vh;
-	top: 10%;
-	left: auto;
+.summaryFutureRight:hover > #finca{
+	height: 500px;
+	position: absolute;
+	margin-top: -5vh;
+	margin-left: -18vh;
 }
 #finca {
-	height: 30vh;
-	position: relative;
+	height: 400px;
+	position: absolute;
+	margin-top: 0vh;
+	margin-left: 0vh;
 	transition: all 1.2s;
-	left: 40%;
-	top: -20%;
 }
 #bueyes {
-	height: 25vh;
-	position: relative;
-	left: -5%;
+	height: 300px;
+	position: absolute;
+	margin-top: 25vh;
+	margin-left: 25vh;
 	transition: all 1.2s;
 }
 #whatsapp{
@@ -116,12 +124,6 @@
 }
 #whatsapp img:hover{
 	height: 60px;
-}
-@media (max-width: 799px) {
-    body {
-        margin: 10px; /* Ajusta el margen para anchos menores a 800px */
-    }
-
 }
 /* estilo de indexMenu.html ---------------------------------------------------*/
 .boxMenu {
@@ -220,14 +222,11 @@
 
 .navbar {
     background-color: ghostwhite;
-    padding: 10px 10px; 
+    padding: 10px 30px; 
     display: flex;
 	position: sticky;
 	top: 0;
 	z-index: 100;
-}
-.navbar img{
-	height: 4vh;
 }
 /*
 	float: right;
@@ -240,13 +239,12 @@
 	position: fixed;
     list-style-type: none;
     padding: 10px;
-	margin: auto;
     display: flex; 
-	right: 2vh;
+	right: 5vh;
 }
 li {
-	margin-left: 1.5vh;
-	font-size: 1.8vh;
+	margin-left: 20px;
+	font-size: 18px;
 	font-family: georgia;
 }
 li a{
