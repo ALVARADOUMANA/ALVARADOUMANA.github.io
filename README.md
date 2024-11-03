@@ -1,7 +1,21 @@
 "# ALVARADOUMANA.github.io" 
-Esta pagna web tiene unicamente intenciones de aprendizaje y desarrollo de habilidades.
 
-Se desea cumplir con:
-**(done)** Una Interfaz similar a la real
-**(done)** Que se ajuste a los parametros de computadora
-**(undone)** Que se ajuste a los parametros de celulares
+
+tu-portfolio/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── main.js
+├── sections/
+│   ├── inicio.html
+│   ├── sobre-mi.html
+│   ├── habilidades.html
+│   ├── certificados.html
+│   ├── proyectos.html
+│   └── contacto.html
+├── certificates/
+│   ├── certificate_UiPath_Dream.pdf
+│   ├── certificate_FrameworkSpringBoot.pdf
+│   ├── certificate_ScrumFoundation.pdf
+│   └── certificate_IntroductionDataScience.pdf

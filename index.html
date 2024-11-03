@@ -1,105 +1,72 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Alsacia web</title>
-		<link rel="stylesheet" type="text/css" href="css/estilo.css">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/moviles.css">
-		<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
-		<link rel="icon" type="image/png" href="imgs/CREACIONES.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio - Ingeniero en Sistemas</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <img
+        src="/api/placeholder/150/150"
+        alt="Foto de perfil"
+        class="profile-img"
+      />
+      <div class="text-center text-white mb-4">
+        <h4>Pablo Alvarado Umaña</h4>
+        <p>Ingeniero en Sistemas</p>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#habilidades">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#certificados">Certificados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-light me-2"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a href="#" class="btn btn-outline-light me-2"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a href="#" class="btn btn-outline-light"
+          ><i class="bi bi-envelope"></i
+        ></a>
+      </div>
+    </nav>
 
-	<body>
+    <!-- Main Content -->
+    <main class="main-content">
+      <div id="content-sections">
+        <!-- Las secciones se cargarán aquí -->
+      </div>
+    </main>
 
-	<!-- <header> -->
-		<nav class="navbar">
-			<div class="left">
-				<a href="index.html">
-					<button class="left">
-						<img id="lockup" src="imgs/lockup.svg" alt="simbol">
-					</button>
-				</a>
-			</div>
-			<div class="right">
-				<ul>
-					<li><a href="index.html">Alsacia</a></li>
-					<li><a href="pages/indexMenu.html">Menu</a></li>
-					<li><a href="pages/indexSugerencias.html">Feedbacks</a></li>
-				</ul>
-			</div>
-		</nav>
-	<!-- </header> -->
-
-		<article>
-			<section>
-				<center>
-					<div class="main">
-						<img src="imgs/logo.svg" alt="STARBUCKS logo" height="200px">
-						<br><br><br><br><br><br><br><br><br>
-						<h2>WELCOME TO OUR FARM</h2>
-					</div>
-				</center>
-				<br><br>
-					<div class="summary">
-						<p>
-							Here in Costa Rica, at the foot of a spectacular volcano, 
-							something magical is taking place — something much bigger than coffee.
-						</p>
-						<p>
-							Hacienda Alsacia is our first and only coffee farm. We came here to work the soil, 
-							learn from the land and channel our passion into positive change.
-						</p>
-						<p>
-							Now we invite you to rediscover coffee through the human experience.
-							 Once you visit, you too have ownership in its future.
-						</p>
-					</div>
-		</section>
-			<section>
-				<div class="summaryFuture">
-					<center><h2>THE FUTURE OF COFFEE</h2></center>
-					<div class="summaryFutureLeft">
-						<h3>INSPIRED BY STARBUCKS</h3>
-						<p>
-							Arabica beans were first introduced to Costa Rica in the 1700s.
-							Today coffee is an important part of the country's economy.
-							To help ensure the future of coffee, the mission of Hacienda Alsacia is clear:
-							Create best practices to make growing coffee more profitable for small-scale farms;
-							develop the next generation of disease-resistant, high-quality coffee;
-							and share information and resources freely with farmers around the world.
-						</p>
-					</div>
-					<div class="summaryFutureRight">
-						<img id="bueyes" src="imgs/carreta.png" alt="carreta con bueyes">
-						<img id="finca" src="imgs/finca.png" alt="finca">
-					</div>
-
-				</div>
-			</section>
-		</article>
-		<a href="https://wa.me/50686969625?text= Ni caffé se hacer la verdad" target="_blank">
-			<button id="whatsapp">
-				<img src="imgs/whatsapp.svg" alt="whatsapp" >
-			</button>
-		</a>
-		<footer>
-			<center>
-				<p>
-					<cite>
-						Información recuperada de ALSACIA <a href="https://www.starbuckscoffeefarm.com/en/" target="_blank"> clic aqui</a> para obtener mas información.
-					</cite>					
-					<br><br>
-					version 1.1.8
-					<br>
-					<a href="https://www.instagram.com/starbucks_cr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-						<button id="instagram">
-							<img src="imgs/instagram.svg" alt="instagram" >
-						</button>
-					</a>
-				</p>
-			</center>
-		</footer>
-
-	</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
