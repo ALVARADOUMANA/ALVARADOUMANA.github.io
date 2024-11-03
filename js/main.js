@@ -1,61 +1,25 @@
+// js/main.js
+
 // Función para cargar las secciones
 async function loadSection(sectionName) {
     try {
-        console.log(`Intentando cargar sección: ${sectionName}`);
-        // Ruta absoluta desde la raíz del proyecto
-        const response = await fetch(`/sections/${sectionName}.html`);
-        console.log('Response status:', response.status);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
+        const response = await fetch(`sections/${sectionName}.html`);
         const content = await response.text();
-        console.log('Contenido cargado:', content.substring(0, 50) + '...'); // Muestra los primeros 50 caracteres
         document.querySelector('#content-sections').innerHTML = content;
     } catch (error) {
-        console.error('Error detallado:', error);
-        // Intenta con una ruta relativa si la absoluta falla
-        try {
-            const response = await fetch(`sections/${sectionName}.html`);
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const content = await response.text();
-            document.querySelector('#content-sections').innerHTML = content;
-        } catch (secondError) {
-            console.error('Error con ruta relativa:', secondError);
-        }
+        console.error('Error loading section:', error);
     }
 }
 
 // Cargar todas las secciones al inicio
 async function loadAllSections() {
-    console.log('Iniciando carga de todas las secciones');
     const sections = ['inicio', 'sobre-mi', 'habilidades', 'certificados', 'proyectos', 'contacto'];
-    const contentContainer = document.querySelector('#content-sections');
-    contentContainer.innerHTML = '';
-
     for (const section of sections) {
-        try {
-            console.log(`Intentando cargar sección: ${section}`);
-            // Intenta primero con ruta relativa
-            const response = await fetch(`sections/${section}.html`);
-            console.log(`Estado de respuesta para ${section}:`, response.status);
-            
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            
-            const content = await response.text();
-            console.log(`Contenido cargado para ${section}:`, content.substring(0, 50) + '...');
-            
-            const sectionDiv = document.createElement('section');
-            sectionDiv.className = 'section';
-            sectionDiv.id = section;
-            sectionDiv.innerHTML = content;
-            contentContainer.appendChild(sectionDiv);
-        } catch (error) {
-            console.error(`Error cargando sección ${section}:`, error);
-        }
+        const response = await fetch(`sections/${section}.html`);
+        const content = await response.text();
+        const container = document.createElement('div');
+        container.innerHTML = content;
+        document.querySelector('#content-sections').appendChild(container);
     }
 }
 
@@ -63,21 +27,32 @@ async function loadAllSections() {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const targetId = this.getAttribute('href');
-        console.log('Navegando a:', targetId);
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        } else {
-            console.log('Elemento no encontrado:', targetId);
-        }
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
 
 // Cargar todas las secciones cuando se carga la página
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM cargado, iniciando carga de secciones');
-    loadAllSections();
-});
+document.addEventListener('DOMContentLoaded', loadAllSections);
+
+// Función para copiar al portapapeles
+function copyToClipboard(text, iconElement) {
+    navigator.clipboard.writeText(text).then(
+        function () {
+            // Cambiar icono a uno de éxito
+            iconElement.classList.remove('bi-clipboard');
+            iconElement.classList.add('bi-check-circle');
+
+            // Volver al icono original después de 2 segundos
+            setTimeout(() => {
+                iconElement.classList.remove('bi-check-circle');
+                iconElement.classList.add('bi-clipboard');
+            }, 2000);
+        },
+        function (err) {
+            // Puedes manejar el error aquí si es necesario
+            console.error("Error al copiar: ", err);
+        }
+    );
+}

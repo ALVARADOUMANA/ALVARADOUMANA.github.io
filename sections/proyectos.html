@@ -4,11 +4,7 @@
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="card project-card">
-          <img
-            src="/api/placeholder/400/300"
-            class="card-img-top"
-            alt="Proyecto 1"
-          />
+          <img src="imgs/fondo1.png" class="card-img-top" alt="Proyecto 1" />
           <div class="card-body">
             <h5 class="card-title">Proyecto 1</h5>
             <p class="card-text">
@@ -21,11 +17,7 @@
 
       <div class="col-md-4 mb-4">
         <div class="card project-card">
-          <img
-            src="/api/placeholder/400/300"
-            class="card-img-top"
-            alt="Proyecto 2"
-          />
+          <img src="imgs/fondo2.png" class="card-img-top" alt="Proyecto 2" />
           <div class="card-body">
             <h5 class="card-title">Proyecto 2</h5>
             <p class="card-text">
@@ -38,11 +30,7 @@
 
       <div class="col-md-4 mb-4">
         <div class="card project-card">
-          <img
-            src="/api/placeholder/400/300"
-            class="card-img-top"
-            alt="Proyecto 3"
-          />
+          <img src="imgs/fondo3.png" class="card-img-top" alt="Proyecto 3" />
           <div class="card-body">
             <h5 class="card-title">Proyecto 3</h5>
             <p class="card-text">
@@ -55,3 +43,15 @@
     </div>
   </div>
 </div>
+
+<style>
+  .project-card {
+    height: 100%; /* Esto hará que la tarjeta tome toda la altura del contenedor */
+    display: flex; /* Activar flexbox */
+    flex-direction: column; /* Asegurarte de que los hijos se apilen verticalmente */
+  }
+
+  .card-body {
+    flex-grow: 1; /* Permitir que el cuerpo de la tarjeta crezca para llenar el espacio disponible */
+  }
+</style>

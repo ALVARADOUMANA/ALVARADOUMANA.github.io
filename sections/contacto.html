@@ -1,35 +1,102 @@
+<!-- section/contacto.html -->
 <div class="section" id="contacto">
-  <div class="container">
-    <h2 class="mb-4">Contacto</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <form>
-          <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" required />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required />
-          </div>
-          <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea
-              class="form-control"
-              id="mensaje"
-              rows="4"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-        </form>
-      </div>
-      <div class="col-md-6">
-        <h4>Información de Contacto</h4>
-        <p><i class="bi bi-envelope"></i> alvaradoumanap@gmail.com</p>
-        <p><i class="bi bi-phone"></i> +506 86969625</p>
-        <p><i class="bi bi-geo-alt"></i> Alajuela, Costa Rica</p>
-      </div>
+    <div class="container">
+        <h2 class="section-title text-center">Contacto</h2>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6">
+                <div class="contact-info h-100">
+                    <h4 class="mb-4 fw-bold">Información de Contacto</h4>
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <a href="mailto:alvaradoumanap@gmail.com" class="text-decoration-none text-dark">
+                            <p class="contact-link mb-0">
+                                <i class="bi bi-envelope-fill text-primary"></i>
+                                <span class="ms-2">alvaradoumanap@gmail.com</span> <!-- Agregado ms-2 para margen -->
+                            </p>
+                        </a>
+                        <i class="bi bi-clipboard text-primary cursor-pointer" 
+                           onclick="copyToClipboard('alvaradoumanap@gmail.com', this)"></i>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <a href="tel:+50686969625" class="text-decoration-none text-dark">
+                            <p class="contact-link mb-0">
+                                <i class="bi bi-telephone-fill text-primary"></i>
+                                <span class="ms-2">+506 86969625</span> <!-- Agregado ms-2 para margen -->
+                            </p>
+                        </a>
+                        <i class="bi bi-clipboard text-primary cursor-pointer" 
+                           onclick="copyToClipboard('86969625', this)"></i>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <a href="https://maps.google.com/?q=Alajuela,Costa Rica" target="_blank" class="text-decoration-none text-dark">
+                            <p class="contact-link mb-0">
+                                <i class="bi bi-geo-alt-fill text-primary"></i>
+                                <span class="ms-2">Alajuela, Costa Rica</span> <!-- Agregado ms-2 para margen -->
+                            </p>
+                        </a>
+                        <i class="bi bi-clipboard text-primary cursor-pointer" 
+                           onclick="copyToClipboard('Alajuela, Costa Rica', this)"></i>
+                    </div>
+
+                    <div class="mt-4">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125759.03703584752!2d-84.27438907866897!3d10.016697843407843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9c4691acb23%3A0x338e9ee10cc01c18!2sAlajuela%2C%20Costa%20Rica!5e0!3m2!1ses!2s!4v1699050436639!5m2!1ses!2s"
+                            width="100%"
+                            height="200"
+                            style="border: 0; border-radius: 8px"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
+
+<style>
+    .contact-info {
+        background-color: #ffffff;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-info i {
+        font-size: 1.5rem; /* Tamaño del icono */
+        margin-left: 10px; /* Espacio a la izquierda del icono */
+        cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    }
+
+    .contact-link {
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+    .contact-link:hover {
+        color: #0d6efd !important;
+    }
+
+    .section-title {
+        font-weight: 600;
+        margin-bottom: 3rem;
+        position: relative;
+        display: inline-block;
+    }
+
+    .section-title:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background-color: #0d6efd;
+        border-radius: 2px;
+    }
+</style>
