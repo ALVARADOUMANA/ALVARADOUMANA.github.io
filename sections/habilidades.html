@@ -1,40 +1,152 @@
 <div class="section" id="habilidades">
   <div class="container">
-    <h2 class="section-title text-center mb-4">Habilidades Técnicas</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <h5>HTML5/CSS3</h5>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 90%"></div>
-        </div>
+    <h2 class="section-title text-center mb-5">Habilidades Técnicas</h2>
+    
+    <!-- Nivel Avanzado -->
+    <div class="skill-level mb-5">
+      <h3 class="level-title text-center mb-4">Nivel Avanzado</h3>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="skill-container">
+            <div class="skill-item">
+              <i class="devicon-react-original colored" title="React"></i>
+              <div class="skill-info">
+                <h5>React</h5>
+              </div>
+            </div>
 
-        <h5>JavaScript</h5>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 85%"></div>
-        </div>
+            <div class="skill-item">
+              <i class="devicon-laravel-plain colored" title="Laravel"></i>
+              <div class="skill-info">
+                <h5>Laravel</h5>
+              </div>
+            </div>
 
-        <h5>Bootstrap</h5>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 80%"></div>
+            <div class="skill-item">
+              <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+              <div class="skill-info">
+                <h5>JavaScript</h5>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="devicon-html5-plain colored" title="HTML5"></i>
+              <div class="skill-info">
+                <h5>HTML5</h5>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="devicon-css3-plain colored" title="CSS3"></i>
+              <div class="skill-info">
+                <h5>CSS3</h5>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="devicon-git-plain colored" title="Git"></i>
+              <div class="skill-info">
+                <h5>Git</h5>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="devicon-mysql-plain colored" title="SQL"></i>
+              <div class="skill-info">
+                <h5>SQL</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="col-md-6">
-        <h5>React</h5>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 75%"></div>
-        </div>
+    <!-- Nivel Intermedio -->
+    <div class="skill-level">
+      <h3 class="level-title text-center mb-4">Nivel Intermedio</h3>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="skill-container">
+            <div class="skill-item">
+              <i class="devicon-dot-net-plain colored" title=".NET"></i>
+              <div class="skill-info">
+                <h5>.NET</h5>
+              </div>
+            </div>
 
-        <h5>Node.js</h5>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 70%"></div>
-        </div>
+            <div class="skill-item">
+              <i class="devicon-python-plain colored" title="Python"></i>
+              <div class="skill-info">
+                <h5>Python</h5>
+              </div>
+            </div>
 
-        <h5>SQL</h5>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 80%"></div>
+            <div class="skill-item">
+              <i class="devicon-spring-plain colored" title="Spring Boot"></i>
+              <div class="skill-info">
+                <h5>Spring Boot</h5>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="devicon-microsoftsqlserver-plain colored" title="Power BI"></i>
+              <div class="skill-info">
+                <h5>Power BI</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<style>
+.skill-level {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.level-title {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f8f9fa;
+  transition: transform 0.2s;
+}
+
+.skill-item:hover {
+  transform: translateY(-2px);
+}
+
+.skill-item i {
+  font-size: 2rem;
+}
+
+.skill-info {
+  flex-grow: 1;
+}
+
+.skill-info h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2d2d2d;
+}
+</style>
