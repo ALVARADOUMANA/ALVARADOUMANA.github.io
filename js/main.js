@@ -13,7 +13,7 @@ async function loadSection(sectionName) {
 
 // Cargar todas las secciones al inicio
 async function loadAllSections() {
-    const sections = ['inicio', 'sobre-mi', 'habilidades', 'certificados', 'proyectos', 'contacto'];
+    const sections = ['inicio', 'sobre-mi', 'habilidades', 'certificados', 'proyectos', 'contacto', 'mejorando'];
     for (const section of sections) {
         const response = await fetch(`sections/${section}.html`);
         const content = await response.text();
@@ -56,3 +56,62 @@ function copyToClipboard(text, iconElement) {
         }
     );
 }
+
+// Función para iniciar la animación del contador de edad
+function animateAge() {
+    // Encontrar todos los elementos con la clase edad-contador
+    const counters = document.getElementsByClassName('edad-contador');
+    
+    if (!counters.length) {
+        console.log('Buscando elementos contador...');
+        setTimeout(animateAge, 100);
+        return;
+    }
+
+    Array.from(counters).forEach(counter => {
+        let currentCount = 0;
+        const targetAge = 21; // Tu edad actual
+
+        // Resetear el contador
+        counter.textContent = '0';
+
+        const interval = setInterval(() => {
+            if (currentCount >= targetAge) {
+                clearInterval(interval);
+                counter.classList.add('highlight');
+                
+                setTimeout(() => {
+                    counter.classList.remove('highlight');
+                    setTimeout(() => {
+                        currentCount = 0;
+                        animateAge();
+                    }, 1000);
+                }, 1000);
+                return;
+            }
+            currentCount++;
+            counter.textContent = currentCount;
+        }, 50);
+    });
+}
+
+// Iniciar animación cuando se carga el DOM
+document.addEventListener('DOMContentLoaded', animateAge);
+
+// Observador para detectar cambios en el DOM
+const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+        if (mutation.addedNodes.length) {
+            animateAge();
+        }
+    });
+});
+
+// Configurar el observador
+observer.observe(document.body, {
+    childList: true,
+    subtree: true
+});
+
+// Si estás usando algún evento personalizado para la carga de secciones
+document.addEventListener('sectionLoaded', animateAge);

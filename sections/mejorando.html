@@ -1,0 +1,106 @@
+<div class="section bg-light py-5" id="mejorando">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">En Constante Evolución</h2>
+      <div class="row g-4">
+        
+        <div class="col-md-3">
+          <div class="development-card text-center">
+            <div class="icon-container mb-4">
+              <i class="fas fa-code text-primary fa-3x"></i>
+            </div>
+            <h5>Aprendizaje Continuo</h5>
+            <p>Constantemente actualizándome en nuevas tecnologías y metodologías de desarrollo.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="development-card text-center">
+            <div class="icon-container mb-4">
+              <i class="fas fa-cogs text-primary fa-3x"></i>
+            </div>
+            <h5>Mejora Constante</h5>
+            <p>Optimizando habilidades y procesos para ofrecer soluciones más eficientes.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="development-card text-center">
+            <div class="icon-container mb-4">
+              <i class="fas fa-rocket text-primary fa-3x"></i>
+            </div>
+            <h5>Innovación</h5>
+            <p>Explorando nuevas formas de resolver problemas y crear soluciones innovadoras.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="development-card text-center">
+            <div class="icon-container mb-4">
+              <i class="fas fa-tasks text-primary fa-3x"></i>
+            </div>
+            <h5>Crecimiento Profesional</h5>
+            <p>Expandiendo conocimientos y experiencia en diferentes áreas del desarrollo.</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  <style>
+  .development-card {
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      height: 100%;
+  }
+  
+  .development-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon-container {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+      background: #f8f9fa;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+  }
+  
+  .icon-container::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px dashed var(--bs-primary);
+      animation: spin 15s linear infinite;
+  }
+  
+  @keyframes spin {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+  
+  .development-card h5 {
+      color: var(--bs-primary);
+      margin-bottom: 1rem;
+  }
+  
+  .development-card p {
+      color: #6c757d;
+      font-size: 0.9rem;
+      margin-bottom: 0;
+  }
+  </style>

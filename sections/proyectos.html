@@ -1,15 +1,39 @@
 <div class="section" id="proyectos">
   <div class="container">
-    <h2 class="mb-4">Proyectos Destacados</h2>
+    <h2 class="section-title text-center mb-4">Proyectos Destacados</h2>
     <div class="row">
+      
       <div class="col-md-4 mb-4">
         <div class="card project-card">
-          <img src="imgs/fondo1.png" class="card-img-top" alt="Proyecto 1" />
+          <img src="imgs/sistema-admin-db.jpg" class="card-img-top" alt="Vista previa del Sistema de Administración de Bases de Datos" />
           <div class="card-body">
-            <h5 class="card-title">Proyecto 1</h5>
+            <h5 class="card-title">Sistema de Administración de Bases de Datos</h5>
             <p class="card-text">
-              Descripción breve del proyecto y tecnologías utilizadas.
+              Sistema integral para la gestión y administración de bases de datos empresariales.
             </p>
+            <div class="tech-stack mb-3">
+              <i class="devicon-dot-net-plain colored" title=".NET"></i>
+              <i class="devicon-react-original colored" title="React"></i>
+              <i class="devicon-oracle-original colored" title="Oracle"></i>
+            </div>
+            <a href="https://gestion-oracle-97eh8zxz9-pablo-alvarado-umanas-projects.vercel.app/" class="btn btn-primary" target="_blank">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card project-card">
+          <img src="imgs/fondo2.png" class="card-img-top" alt="Sistema de Control de Flotilla Vehicular" />
+          <div class="card-body">
+            <h5 class="card-title">Sistema de Seguimiento de Control de Flotilla Vehicular</h5>
+            <p class="card-text">
+              Sistema para la gestión y monitoreo de flotillas vehiculares empresariales.
+            </p>
+            <div class="tech-stack mb-3">
+              <i class="devicon-react-original colored" title="React"></i>
+              <i class="devicon-laravel-plain colored" title="Laravel"></i>
+              <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+            </div>
             <a href="#" class="btn btn-primary">Ver Proyecto</a>
           </div>
         </div>
@@ -17,41 +41,42 @@
 
       <div class="col-md-4 mb-4">
         <div class="card project-card">
-          <img src="imgs/fondo2.png" class="card-img-top" alt="Proyecto 2" />
+          <img src="imgs/fondo4.png" class="card-img-top" alt="GEFI - Sistema de Gestión Eficiente de Control de Finca" />
           <div class="card-body">
-            <h5 class="card-title">Proyecto 2</h5>
+            <h5 class="card-title">GEFI - Sistema de Gestión Eficiente de Control de Finca</h5>
             <p class="card-text">
-              Descripción breve del proyecto y tecnologías utilizadas.
+              Sistema integral para la gestión ganadera que maneja control de vacunas, productos, tratamientos, seguimiento de animales, actualizaciones de pesos, razas y gestión de usuarios con roles.
             </p>
+            <div class="tech-stack mb-3">
+              <i class="devicon-dot-net-plain colored" title=".NET"></i>
+              <i class="devicon-react-original colored" title="React"></i>
+              <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+            </div>
             <a href="#" class="btn btn-primary">Ver Proyecto</a>
           </div>
         </div>
       </div>
 
-      <div class="col-md-4 mb-4">
-        <div class="card project-card">
-          <img src="imgs/fondo3.png" class="card-img-top" alt="Proyecto 3" />
-          <div class="card-body">
-            <h5 class="card-title">Proyecto 3</h5>
-            <p class="card-text">
-              Descripción breve del proyecto y tecnologías utilizadas.
-            </p>
-            <a href="#" class="btn btn-primary">Ver Proyecto</a>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
 
 <style>
   .project-card {
-    height: 100%; /* Esto hará que la tarjeta tome toda la altura del contenedor */
-    display: flex; /* Activar flexbox */
-    flex-direction: column; /* Asegurarte de que los hijos se apilen verticalmente */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .card-body {
-    flex-grow: 1; /* Permitir que el cuerpo de la tarjeta crezca para llenar el espacio disponible */
+    flex-grow: 1;
+  }
+
+  .tech-stack {
+    font-size: 1.5rem;
+  }
+
+  .tech-stack i {
+    margin-right: 0.5rem;
   }
 </style>
