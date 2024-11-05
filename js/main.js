@@ -63,7 +63,6 @@ function animateAge() {
     const counters = document.getElementsByClassName('edad-contador');
     
     if (!counters.length) {
-        console.log('Buscando elementos contador...');
         setTimeout(animateAge, 100);
         return;
     }
@@ -98,20 +97,13 @@ function animateAge() {
 // Iniciar animación cuando se carga el DOM
 document.addEventListener('DOMContentLoaded', animateAge);
 
-// Observador para detectar cambios en el DOM
-const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-        if (mutation.addedNodes.length) {
-            animateAge();
-        }
-    });
-});
-
-// Configurar el observador
-observer.observe(document.body, {
-    childList: true,
-    subtree: true
-});
-
 // Si estás usando algún evento personalizado para la carga de secciones
 document.addEventListener('sectionLoaded', animateAge);
+
+
+console.warn(`
+    ###  #     #   #    #  ##### #####   ## 
+    #    #    # #  #    #    #     #    #  #
+    #    #    ###   #   #    #     #    #  #
+    #    #    # #    # #     #     #    #  #
+    ###  ###  # #     #    #####   #     ## `);
