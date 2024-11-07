@@ -18,6 +18,17 @@
   padding: 20px;
 }
 
+#content-sections section {
+  padding-top: 40px;
+  padding-bottom: 260px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section {
+  padding: 220px 0;
+}
+
 .profile-img {
   width: 150px;
   height: 150px;
@@ -35,11 +46,6 @@
 .nav-link:hover {
   background-color: #343a40;
   color: #007bff;
-}
-
-.section {
-  min-height: 100vh;
-  padding: 60px 0;
 }
 
 .skill-bar {
