@@ -314,7 +314,7 @@
   width: 100%;
   height: 100%;
   content: "";
-  opacity: 0.25;
+  opacity: 0.15; /* Ajusta la opacidad del ruido */
   z-index: 1000;
   pointer-events: none;
   background: transparent;
