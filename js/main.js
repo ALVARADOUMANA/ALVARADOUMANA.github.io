@@ -101,6 +101,19 @@ document.addEventListener('DOMContentLoaded', animateAge);
 document.addEventListener('sectionLoaded', animateAge);
 
 
+// Inicializar el carousel cuando se muestre el modal
+document.addEventListener('DOMContentLoaded', function() {
+    const flotillaModal = document.getElementById('flotillaModal');
+    if (flotillaModal) {
+        flotillaModal.addEventListener('shown.bs.modal', function () {
+            const carousel = new bootstrap.Carousel(document.getElementById('flotillaCarousel'), {
+                interval: 5000, // Cambia la imagen cada 5 segundos
+                wrap: true     // Permite que el carousel sea cíclico
+            });
+        });
+    }
+});
+
 console.warn(`
     ###  #     ##   #    #  #####  #####   ## 
     #    #    #  #  #    #    #      #    #  #

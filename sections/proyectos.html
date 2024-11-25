@@ -2,81 +2,393 @@
   <div class="container">
     <h2 class="section-title text-center mb-4">Proyectos Destacados</h2>
     <div class="row">
-      
       <div class="col-md-4 mb-4">
         <div class="card project-card">
-          <img src="imgs/sistema-admin-db.jpg" class="card-img-top" alt="Vista previa del Sistema de Administración de Bases de Datos" />
+          <img
+            src="imgs/sistema-admin-db.jpg"
+            class="card-img-top"
+            alt="Vista previa del Sistema de Administración de Bases de Datos"
+          />
           <div class="card-body">
-            <h5 class="card-title">Sistema de Administración de Bases de Datos</h5>
+            <h5 class="card-title">
+              Sistema de Administración de Bases de Datos
+            </h5>
             <p class="card-text">
-              Sistema integral para la gestión y administración de bases de datos empresariales.
+              Sistema integral para la gestión y administración de bases de
+              datos empresariales.
             </p>
             <div class="tech-stack mb-3">
               <i class="devicon-dot-net-plain colored" title=".NET"></i>
               <i class="devicon-react-original colored" title="React"></i>
               <i class="devicon-oracle-original colored" title="Oracle"></i>
             </div>
-            <a href="https://gestion-oracle-97eh8zxz9-pablo-alvarado-umanas-projects.vercel.app/" class="btn btn-primary" target="_blank">Ver Proyecto</a>
+            <a
+              href="https://gestion-oracle-97eh8zxz9-pablo-alvarado-umanas-projects.vercel.app/"
+              class="btn btn-primary"
+              target="_blank"
+              >Ver Proyecto</a
+            >
           </div>
         </div>
       </div>
 
       <div class="col-md-4 mb-4">
         <div class="card project-card">
-          <img src="imgs/fondo2.png" class="card-img-top" alt="Sistema de Control de Flotilla Vehicular" />
+          <img
+            src="imgs/Image_1.jpeg"
+            class="card-img-top"
+            alt="Sistema de Control de Flotilla Vehicular"
+          />
           <div class="card-body">
-            <h5 class="card-title">Sistema de Seguimiento de Control de Flotilla Vehicular</h5>
+            <h5 class="card-title">
+              Sistema de Seguimiento de Control de Flotilla Vehicular
+            </h5>
             <p class="card-text">
-              Sistema para la gestión y monitoreo de flotillas vehiculares empresariales.
+              Sistema para la gestión y monitoreo de flotillas vehiculares
+              empresariales.
             </p>
             <div class="tech-stack mb-3">
               <i class="devicon-react-original colored" title="React"></i>
               <i class="devicon-laravel-plain colored" title="Laravel"></i>
-              <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+              <i
+                class="devicon-postgresql-plain colored"
+                title="PostgreSQL"
+              ></i>
             </div>
-            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#flotillaModal"
+              >Ver Proyecto</a
+            >
           </div>
         </div>
       </div>
 
       <div class="col-md-4 mb-4">
         <div class="card project-card">
-          <img src="imgs/fondo4.png" class="card-img-top" alt="GEFI - Sistema de Gestión Eficiente de Control de Finca" />
+          <img
+            src="imgs/fondo4.png"
+            class="card-img-top"
+            alt="GEFI - Sistema de Gestión Eficiente de Control de Finca"
+          />
           <div class="card-body">
-            <h5 class="card-title">GEFI - Sistema de Gestión Eficiente de Control de Finca</h5>
+            <h5 class="card-title">
+              GEFI - Sistema de Gestión Eficiente de Control de Finca
+            </h5>
             <p class="card-text">
-              Sistema integral para la gestión ganadera que maneja control de vacunas, productos, tratamientos, seguimiento de animales, actualizaciones de pesos, razas y gestión de usuarios con roles.
+              Sistema integral para la gestión ganadera que maneja control de
+              vacunas, productos, tratamientos, seguimiento de animales,
+              actualizaciones de pesos, razas y gestión de usuarios con roles.
             </p>
             <div class="tech-stack mb-3">
               <i class="devicon-dot-net-plain colored" title=".NET"></i>
               <i class="devicon-react-original colored" title="React"></i>
-              <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+              <i
+                class="devicon-postgresql-plain colored"
+                title="PostgreSQL"
+              ></i>
             </div>
             <a href="#" class="btn btn-primary">Ver Proyecto</a>
           </div>
         </div>
       </div>
-
     </div>
   </div>
+
+  <!-- Modal del Carousel -->
+  <div
+    class="modal fade"
+    id="flotillaModal"
+    tabindex="-1"
+    aria-labelledby="flotillaModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="flotillaModalLabel">
+            Sistema de Seguimiento de Flotilla Vehicular
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body p-0">
+          <div
+            id="flotillaCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="imgs/Image_1.jpeg"
+                  class="d-block w-100"
+                  alt="Flotilla Vehicular Vista 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/Image_2.jpeg"
+                  class="d-block w-100"
+                  alt="Flotilla Vehicular Vista 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/Image_3.jpeg"
+                  class="d-block w-100"
+                  alt="Flotilla Vehicular Vista 3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/Image_4.jpeg"
+                  class="d-block w-100"
+                  alt="Flotilla Vehicular Vista 4"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/Image_5.jpeg"
+                  class="d-block w-100"
+                  alt="Flotilla Vehicular Vista 5"
+                />
+              </div>
+            </div>
+
+            <!-- Flechas de navegación personalizadas -->
+            <div class="navigation-arrows">
+              <button
+                class="custom-arrow prev-arrow"
+                type="button"
+                data-bs-target="#flotillaCarousel"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button
+                class="custom-arrow next-arrow"
+                type="button"
+                data-bs-target="#flotillaCarousel"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+
+            <!-- Indicadores personalizados -->
+            <div class="carousel-indicators custom-indicators">
+              <button
+                type="button"
+                data-bs-target="#flotillaCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#flotillaCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#flotillaCarousel"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#flotillaCarousel"
+                data-bs-slide-to="3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#flotillaCarousel"
+                data-bs-slide-to="4"
+              ></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <small class="text-muted privacy-notice">
+            © 2024 ALVARADOUMANA · Sujeto a términos de privacidad
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .project-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-body {
+      flex-grow: 1;
+    }
+
+    .tech-stack {
+      font-size: 1.5rem;
+    }
+
+    .tech-stack i {
+      margin-right: 0.5rem;
+    }
+
+    .modal-dialog.modal-lg {
+      max-width: 80%;
+      margin: 1.75rem auto;
+    }
+
+    .modal-content {
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .modal-header {
+      padding: 1rem 1.5rem;
+      background-color: white;
+    }
+
+    .modal-title {
+      font-size: 1.25rem;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .carousel-item img {
+      max-height: 70vh;
+      object-fit: contain;
+      padding: 1rem;
+    }
+
+    /* Estilos para las flechas de navegación */
+    .navigation-arrows {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+    }
+
+    .custom-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #2563eb; /* Azul más oscuro */
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      pointer-events: auto;
+      opacity: 0.9;
+      z-index: 10;
+    }
+
+    .custom-arrow:hover {
+      background-color: #1d4ed8; /* Azul aún más oscuro al hover */
+      opacity: 1;
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .prev-arrow {
+      left: 20px;
+    }
+
+    .next-arrow {
+      right: 20px;
+    }
+
+    .custom-arrow i {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    /* Estilos para los indicadores */
+    .custom-indicators {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+      padding: 6px 12px;
+      background-color: rgba(
+        37,
+        99,
+        235,
+        0.2
+      ); /* Fondo semi-transparente azul */
+      border-radius: 20px;
+      z-index: 10;
+    }
+
+    .carousel-indicators button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #93c5fd; /* Azul claro */
+      border: 2px solid #2563eb; /* Borde azul oscuro */
+      margin: 0 5px;
+      transition: all 0.3s ease;
+      opacity: 0.7;
+    }
+
+    .carousel-indicators button.active {
+      background-color: #2563eb; /* Azul oscuro para el activo */
+      transform: scale(1.2);
+      opacity: 1;
+    }
+
+    .privacy-notice {
+      font-size: 0.75rem;
+      color: #6c757d;
+      padding: 0.5rem 0;
+      letter-spacing: 0.5px;
+    }
+
+    /* Animación del modal */
+    .modal.fade .modal-dialog {
+      transform: scale(0.95);
+      transition: transform 0.2s ease-out;
+    }
+
+    .modal.show .modal-dialog {
+      transform: scale(1);
+    }
+
+    /* Efecto hover para las imágenes */
+    .carousel-item {
+      transition: transform 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .custom-arrow {
+        width: 35px;
+        height: 35px;
+      }
+
+      .custom-arrow i {
+        font-size: 1.2rem;
+      }
+
+      .custom-indicators {
+        bottom: 10px;
+      }
+    }
+  </style>
 </div>
-
-<style>
-  .project-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-body {
-    flex-grow: 1;
-  }
-
-  .tech-stack {
-    font-size: 1.5rem;
-  }
-
-  .tech-stack i {
-    margin-right: 0.5rem;
-  }
-</style>
