@@ -2,6 +2,7 @@
   <div class="container">
     <h2 class="section-title text-center mb-4">Proyectos Destacados</h2>
     <div class="row">
+      <!-- Existing project cards -->
       <div class="col-md-4 mb-4">
         <div class="card project-card">
           <img
@@ -94,10 +95,42 @@
           </div>
         </div>
       </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card project-card">
+          <img
+            src="imgs/racket_2.jpeg"
+            class="card-img-top"
+            alt="Sistema de Correo Electrónico en Racket"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              Sistema de Correo Electrónico en Racket
+            </h5>
+            <p class="card-text">
+              Sistema de correo electrónico desarrollado con paradigma funcional que permite la gestión de cuentas, envío y recepción de correos, listado de mensajes y más funcionalidades.
+            </p>
+            <div class="tech-stack mb-3">
+              <span class="racket-icon" title="Racket">λ</span>
+              <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+              <i class="devicon-html5-plain colored" title="HTML5"></i>
+              <i class="devicon-css3-plain colored" title="CSS3"></i>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#racketModal"
+              >Ver Proyecto</a
+            >
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <!-- Modal del Carousel -->
+  <!-- Existing Flotilla Modal -->
   <div
     class="modal fade"
     id="flotillaModal"
@@ -223,6 +256,137 @@
     </div>
   </div>
 
+  <!-- New Racket Email System Modal -->
+  <div
+    class="modal fade"
+    id="racketModal"
+    tabindex="-1"
+    aria-labelledby="racketModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="racketModalLabel">
+            Sistema de Correo Electrónico en Racket
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body p-0">
+          <div
+            id="racketCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="imgs/racket_1.jpeg"
+                  class="d-block w-100"
+                  alt="Racket Email System Vista 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/racket_2.jpeg"
+                  class="d-block w-100"
+                  alt="Racket Email System Vista 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/racket_3.jpeg"
+                  class="d-block w-100"
+                  alt="Racket Email System Vista 3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/racket_4.jpeg"
+                  class="d-block w-100"
+                  alt="Racket Email System Vista 4"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/racket_5.jpeg"
+                  class="d-block w-100"
+                  alt="Racket Email System Vista 5"
+                />
+              </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <div class="navigation-arrows">
+              <button
+                class="custom-arrow prev-arrow"
+                type="button"
+                data-bs-target="#racketCarousel"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button
+                class="custom-arrow next-arrow"
+                type="button"
+                data-bs-target="#racketCarousel"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators custom-indicators">
+              <button
+                type="button"
+                data-bs-target="#racketCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#racketCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#racketCarousel"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#racketCarousel"
+                data-bs-slide-to="3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#racketCarousel"
+                data-bs-slide-to="4"
+              ></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0 justify-content-between">
+          <a href="https://github.com/ALVARADOUMANA/Racket_mail.git" 
+             target="_blank" 
+             class="repo-link">
+            <i class="bi bi-github"></i> Ver Repositorio
+          </a>
+          <small class="text-muted privacy-notice">
+            © 2024 ALVARADOUMANA · Sujeto a términos de privacidad
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   <style>
     .project-card {
       height: 100%;
@@ -375,6 +539,37 @@
     .carousel-item {
       transition: transform 0.3s ease;
     }
+
+      /* Estilo para el ícono de Racket */
+  .racket-icon {
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3178C6;
+    margin-right: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* Estilo para el enlace al repositorio */
+  .repo-link {
+    color: #2563eb;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .repo-link:hover {
+    color: #1d4ed8;
+    transform: translateY(-1px);
+  }
+
+  .repo-link i {
+    font-size: 1.2rem;
+  }
 
     @media (max-width: 768px) {
       .custom-arrow {
